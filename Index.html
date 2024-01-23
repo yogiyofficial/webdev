@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sideNav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #5641b0;
+            padding-top: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #profileImage {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #profileDescription {
+            display: none;
+            text-align: center;
+        }
+
+        #profileImage:hover + #profileDescription {
+            display: block;
+        }
+
+        #mainContent {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        #dashboardContainer {
+            background-color: #5ab96a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #dashboardNav {
+            background-color: #efefef;
+            color: rgb(74, 183, 223);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        #dashboardNav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: rgb(102, 97, 6);
+        }
+
+        #dashboardNav a:hover {
+            text-decoration: underline;
+        }
+
+        #profileDetails img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .dashboard-section {
+            margin-bottom: 30px;
+        }
+
+        #sideNav a {
+            padding: 30px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: background-color 0.3s;
+        }
+
+        #sideNav a:hover {
+            background-color: #c13b3b;
+        }
+
+        /* Style the profile image */
+        #profileImage:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="sideNav">
+    <img id="profileImage" src="https://github.com/yogiyofficial/webdev/blob/main/Resource/WhatsApp%20Image%202024-01-22%20at%2021.57.15_fa5a9e0c.jpg?raw=true" alt="Profile Image">
+    <p id="profileDescription">R.Yogesh Kumar Web Developer</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="#dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+    <a href="#search"><i class="fa fa-fw fa-search"></i>Search</a>
+    <a href="#enelope"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#user"><i class="fa fa-fw fa-user"></i> Logout</a>
+</div>
+
+<div id="mainContent">
+    <div id="dashboardContainer">
+        <div id="dashboardNav">
+            <a href="#User1">User 1</a>
+            <a href="#User2">User 2</a>
+            <a href="#User3">User 3</a>
+         </div>
+
+        <div id="profileDetails" class="dashboard-section">
+            <img src="https://raw.githubusercontent.com/yogiyofficial/webdev/main/Resource/template_0.webp" alt="Your Profile Image">
+            <h2>J Vishva</h2>
+            <p>Email: Vishva123@gmail.com</p>
+            <p>Location: Mumbai, India</p>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Statistics</h2>
+            <p>Days: 100</p>
+            <p>Login Time: 6hrs</p>
+            <p>Inactive Time: 3hrs</p>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Recent Activities</h2>
+            <ul>
+                <li>User A registered on 2024-01-23</li>
+                <li>User B logged in on 2024-01-22</li>
+    
+            </ul>
+        </div
+    </div>
+</div>
+
+</body>
+</html>
